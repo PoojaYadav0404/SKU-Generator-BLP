@@ -2,7 +2,7 @@ function copyImagesBetweenFolders() {
   var UserId = Session.getActiveUser().getEmail();
   var SS = SpreadsheetApp.getActiveSpreadsheet();
 
-  if(UserId==="dmm@bajato.com"){
+  if(UserId==="d"){
 
     var Ui = SpreadsheetApp.getUi();
     var Destination = Ui.prompt("Destination Folder", "Enter Destination Folder id", Ui.ButtonSet.OK_CANCEL);
