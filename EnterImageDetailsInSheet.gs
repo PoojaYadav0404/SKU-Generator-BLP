@@ -3,7 +3,7 @@ function getFoldersSKU() {
   //var ActiveSheet = SS.getActiveSheet().getName();
   var UserId = Session.getActiveUser().getEmail();
 
-  if(UserId==="dmm@bajato.com" ){
+  if(UserId==="d" ){
     var FolderSheet = SS.getSheetByName("Folders");
     var FolderDetails = FolderSheet.getRange(2, 1, FolderSheet.getLastRow()-1, 3).getValues();
 
@@ -25,7 +25,7 @@ function getFoldersSKU() {
 function getImageDetailsInSheet(folderId) {
   var SS = SpreadsheetApp.getActiveSpreadsheet();
   var Sheet = SS.getSheetByName("SKU- Master");
-  //var folderId = '1LgE1RwIyjkwigpWShwPUgbVxcUEA_NFu';
+  //var folderId = '1L_NFu';
   var folderLink = "https://drive.google.com/drive/folders/" + folderId ;
   
   
